@@ -1,0 +1,174 @@
+body{
+	margin:0;
+	padding:0;
+	height: 100vh;
+	font-family: sans-serif;
+	background-color:#00ff00;
+	background: repeating-linear-gradient(45deg,#2b2b2b 0%,#2b2b2b 10%,#222222 50%)0/ 15px 15px;
+}
+.box{
+	width: 300px;
+	padding: 40px;
+	background: #cc00cc;
+	background:repeating-linear-gradient(45deg,#2b2b2b 0%,#2b2b2b 10%,#222222 50%);
+	border: 1px solid rgb(44,44,43);
+	border-radius:5px;
+	box-shadow: -5px -5px 5px #ffffff0d,5px 5px 5px #000000a6,10px 10px 10px #000000a6,15px 15px 15px #000000a6,20px 20px 20px #000000a6;
+	margin-left:500px;
+	margin-top:50px;
+	text-align:center;
+	position:relative;
+}
+.box h1{
+	color:#ffffff;
+	font-weight: 40a;
+	text-transform:uppercase;
+}
+.usid{
+	border:2px solid #3498db;
+	background:#222;
+	background:linear-gradient(#333,#222);
+	display:black;
+	margin:20px auto;
+	text-align:center;
+	box-shadow:0 2px 0 #000;
+	color:#888;
+	padding:14px 10px;
+	width:150px;
+	outline:none;
+	font-family:'cabin' Arial,Helvetica,sans-serif;
+	font-size:13px;
+	font-weight:400;
+	text-shadow:0 -1px 0 #000;
+	border-radius:24px;
+	transition:0.25;
+}
+.usid::-webkit-input-placeholder{
+	color: #00ff00	;
+}
+.usid:-moz-placeholder{
+	color: #ff1a1a;
+}
+.usid:focus{
+	width:280px;
+	animation:glow 880ms ease-out infinite alternate;
+	background:	#222922;
+	background:linear-gradient(#333933,#222922);
+	border-color:#393;
+	box-shadow: 0 0 5px #00ff001a, 0 2px 0 #000;
+	color:#efe;
+	outline:none;
+}
+.usid:focus::-webkit-input-placeholder{
+	color:#efe;
+}
+.usid:focus:-moz-placeholder{
+	color:#efe;
+}
+.button{
+	background:#222;
+	background:linear-gradient(#333,#222);
+	box-sizing:border-box;
+	border:2px solid #2ecc71;
+	box-shadow:0 2px 0 #000;
+	color:#efe;
+	display:block;
+	font-family:'cabin' arial,helvetica,sans-serif;
+	margin:20px auto;
+	text-align:center;
+	padding:14px 40px;
+	outline:none;
+	border-radius:24px;
+	cursar:pointer;
+}
+.button:hover, .button:focus{
+	animation:glow 800ms ease-out infinite alternate;
+	background:#292929;
+	background:linear-gradient(#393939,#ff00bf);
+	color:#5f5;
+	outline:none;
+}
+@keyframes glow{
+	0%{
+		border-color:#393;
+		box-shadow:0 0 5px #00ff0032 inset 0 0 5px #00ff001a, 0 2px 0 #000;
+	}
+	100%{
+		border-color:#6f6;
+		box-shadow:0 0 20px #00ff0099,inset 0 0 20px #00ff0056, 0 2px 0 #000;
+	}
+}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

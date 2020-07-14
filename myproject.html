@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>form validation</title>
+</head>
+<body>
+<link rel="stylesheet" href="new.css">
+<form name="myform" method="post" onsubmit="return validpassword()" action="success.html" >
+<div class="box">
+<h1>CREATE ACCOUNT</h1>
+<input type="username" name="name1" pattern="[a-zA-Z ]{2,}" title="Name must contain alphabates only" class="usid" placeholder="UserName">
+
+<input type="text" name="email1" class="usid" pattern=[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,} required placeholder="Email">
+
+<input type="number" name="mobile1" class="usid" placeholder="MobileNumber">
+
+<input type="password" name="pass1" class="usid" required placeholder="Password">
+
+<input type="submit" value="Submit" class="button">
+</div>
+</form>
+
+<script>
+function validpassword(){
+  var name=document.myform.name1.value;
+  var mobile2=document.myform.mobile1.value;
+  var password=document.myform.pass1.value;
+ 
+    if(name==null || name==""){
+	alert("enter UserName");
+	return false;
+	}
+	if(mobile2.length==10){
+	return true;
+	}
+	else{
+	alert("enter 10 digits Number Only");
+	return false;
+	}
+   if(password.length<6){
+    alert("password must contain 6 characters");
+  return false;
+   }
+   } 
+</script>
+</body>
+</html>
