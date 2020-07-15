@@ -7,7 +7,7 @@
 </head>
 <body>
 	<link rel="stylesheet" href="new.css">
-	<form name="myform" method="post" onsubmit="return validpassword()" action="success.html" >
+	<form method="post" action="success.html" name="myform" onsubmit="return validPasswords()">
 		<div class="box">
 			<h1>CREATE ACCOUNT</h1>
 			<input type="username" name="name1" pattern="[a-zA-Z ]{2,}" title="Name must contain alphabates only" class="usid" placeholder="UserName">
@@ -16,13 +16,31 @@
 
 			<input type="text" name="mobile1" required minlength="10" maxlength="10" class="usid" placeholder="MobileNumber">
 
-			<input type="password" name="pass1" class="usid" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="Password">
+			<input type="password" name="pass1" id="pass1" class="usid" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="Password">
 
-			<input type="submit" value="Submit" class="button">
+			<input type="password" name="pass2"  class="usid" placeholder="Confirm password" id="pass2" required>
+
+			<input type="submit" value="Submit" class="button" >
 		</div>
 	</form>
 
 <script>
+	function validPasswords(){
+		//console.log("Hello im inside function");
+	    //
+	    var pass1  = document.getElementById('pass1').value;
+	    var pass2  = document.getElementById('pass2').value;
+	    //console.log(pass1);
+	    //console.log(pass2);
+	    //window.alert("function called");
+	    if(pass1 === pass2)
+	    	return true;
+	    else{
+	    	window.alert("Passwords isn't matched");
+	    	return false;
+	    }
+
+	}
 function validpassword(){
   var name=document.myform.name1.value;
   var mobile2=document.myform.mobile1.value;
